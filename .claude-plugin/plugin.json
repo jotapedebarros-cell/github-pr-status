@@ -1,0 +1,24 @@
+{
+  "name": "github-pr-status",
+  "version": "0.1.0",
+  "description": "A pane beside the chat showing this branch's GitHub pull request, review state and CI checks",
+  "author": { "name": "jotapedebarros" },
+  "license": "MIT",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "token": {
+      "type": "string",
+      "title": "GitHub token",
+      "description": "Optional. A token that can read pull requests, checks and commit statuses. Needed for private repositories, and raises GitHub's rate limit. Left empty, the plugin tries GITHUB_TOKEN, GH_TOKEN, then `gh auth token`.",
+      "sensitive": true,
+      "required": false
+    },
+    "refreshSeconds": {
+      "type": "number",
+      "title": "Refresh interval (seconds)",
+      "description": "How often the open pane checks GitHub. At least 300 without a token.",
+      "default": 60,
+      "required": false
+    }
+  }
+}
