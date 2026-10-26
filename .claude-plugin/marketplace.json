@@ -1,0 +1,12 @@
+{
+  "name": "github-pr-status",
+  "owner": { "name": "jotapedebarros-cell" },
+  "description": "A Claude Code plugin showing the current branch's GitHub pull request and CI checks in a pane",
+  "plugins": [
+    {
+      "name": "github-pr-status",
+      "source": "./",
+      "description": "A pane beside the chat showing this branch's GitHub pull request, review state and CI checks"
+    }
+  ]
+}
